@@ -365,6 +365,7 @@ h1 {
     .footer {
         flex-direction: column;
         text-align: center;
+        gap: 10px 0;
     }
 }
 
@@ -424,5 +425,6 @@ h1 {
     }
 
 }
+
 
 
