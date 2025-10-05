@@ -305,7 +305,7 @@ h1 {
         animation: none;
     }
     .header {
-        padding-inline: 35px;
+        padding-inline: 20px;
     }
     .continer {
     padding-inline: 35px;
@@ -353,7 +353,7 @@ h1 {
         align-items: center;
     }
     .contact iframe {
-        width: 400px;
+        width: 300px;
     }
     .contact form {
         width: 100%;
@@ -424,4 +424,5 @@ h1 {
     }
 
 }
+
 
