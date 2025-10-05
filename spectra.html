@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectra Lab</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+    (function(){
+      // حط هنا ال Public Key بتاعك
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+
+    function sendMail(event){
+      event.preventDefault();
+
+      emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", "#contact-form")
+      .then(function(response) {
+        alert("✅ تم إرسال الرسالة بنجاح!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("❌ حصل خطأ: " + error.text);
+      });
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <img src="logo.png" alt="logo">
+        <ul>
+            <li><a href="#master" class="active">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="landing" id="home">
+        <div class="continer">
+            <div class="text">
+                <h1>Spectra lab</h1>
+                <p>Discrption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus neque beatae suscipit sed obcaecati iure exercitationem facere amet magnam ad dolore, dolores quod, delectus voluptate a dignissimos temporibus incidunt illo!</p>
+                <button>Learn More</button>
+                <div class="social">
+                    <a href=""><img src="facebook.png" alt="Instgram-logo"></a>
+                    <a href=""><img src="instagram.png" alt="Instgram-logo"></a>
+                    <a href=""><img src="tik_tok.png" alt="Instgram-logo"></a>
+                </div>
+            </div>
+            <img src="tube.png" alt="tubes" class="tube">
+        </div>
+    </div>
+    <div class="info">
+        <div class="continer">
+        <div class="card">
+            <img src="blood-test.png" alt="blood-test icon">
+            <h3>RESEARCH</h3>
+            <P>We conduct in-depth research to <br> find innovative solutions</P>
+        </div>
+        <div class="card">
+            <img src="experiment.png" alt="blood-test icon">
+            <h3>ANALYSIS</h3>
+            <P>Our analysis processes ensure <br> accurate and reliable results</P>
+        </div>
+        <div class="card">
+            <img src="diagnosis.png" alt="blood-test icon">
+            <h3>Diagnostics</h3>
+            <P>We provide diagnostic <br> services with precise an timely results</P>
+        </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h2 class="autoShow">About <span>Us</span></h2>
+        <div class="continer">
+            <img src="background.png" class="imageRevealL" alt="">
+            <div class="text">
+                <h3>WHY CHOOSE US</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quibusdam placeat tenetur, vel mollitia nesciunt non <br> sint amet, quis, aut voluptate enim officiis autem consectetur explicabo eius? <br> Sunt sit at consequatur.</P>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact" id="contact">
+        <h2 class="autoShow">Contact <span>Us</span></h2>
+        <div class="continer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.1957253240935!2d31.432537575350192!3d30.174402474858425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458109a0a23a681%3A0x15262ac6b97b8260!2sAl%20Salam%20stadium!5e0!3m2!1sen!2seg!4v1756048297172!5m2!1sen!2seg" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form class="formRevealL" id="contact-form" onsubmit="sendMail(event)">
+                <h3>REQUEST</h3>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="number" name="email" placeholder="Phone Number" required>
+                <textarea name="message" placeholder="Enter your massige" required rows="6"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made With Love By Lilo © 2025</p>
+        <div class="social">
+            <a href=""><img src="facebook.png" alt="Instgram-logo"></a>
+            <a href=""><img src="instagram.png" alt="Instgram-logo"></a>
+            <a href=""><img src="tik_tok.png" alt="Instgram-logo"></a>
+        </div>
+    </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
