@@ -171,6 +171,9 @@ span::before {
     margin-top: 20px;
 }
 @media (max-width: 767px) {
+    .background-clip {
+        display: none;
+    }
     h1 {
         margin-top: 60px;
     }
@@ -195,6 +198,9 @@ span::before {
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    .background-clip {
+        bottom: 5px;
+    }
     h1 {
         margin-top: 60px;
     }
@@ -218,3 +224,4 @@ span::before {
     }
 
 }
+
