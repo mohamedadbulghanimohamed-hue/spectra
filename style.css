@@ -234,13 +234,13 @@ h1 {
     backface-visibility: hidden;
 }
 .servise .front img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 .servise .front h3 {
     color: #064064;
     font-size: 1.6em;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 .servise .back {
     background-color: #0b1d41;
@@ -347,7 +347,7 @@ h1 {
   width: 20px;
 }
 .container {
-  background-image: url(background3.jpg);
+  background-image: url(background5.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -360,6 +360,10 @@ h1 {
   transform: translateY(-20px);
   transition: 0.4s;
   opacity: 1;
+}
+.servise .equipmnet img {
+  width: 100%;
+  
 }
 @media (max-width: 767px) {
   .about img,
@@ -414,19 +418,22 @@ h1 {
   .about h2,
   .contact h2,
   .servise h2 {
-    margin-left: 40px;
+    margin-left: 20px;
+    font-size: 2.5em;
   }
   .about h2::before,
   .contact h2::before,
   .servise h2::before{
     width: calc(100% - 253px);
-    right: 40px;
+    left: 248px;
   }
   .servise h2::before {
-    width: calc(100% - 316px);
+        width: calc(100% - 248px);
+        left: 227px;
   }
   .contact h2::before {
-    width: calc(100% - 285px);
+        width: calc(100% - 245px);
+        left: 212px;
   }
   .servise .continer {
     flex-wrap: wrap;
